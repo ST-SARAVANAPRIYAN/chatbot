@@ -1,0 +1,13 @@
+{
+  "websites": [
+    {
+      "name": "example",
+      "base_url": "https://example.com",
+      "paths": ["/", "/about", "/faq"],
+      "css_selector": "main",
+      "max_pages": 10,
+      "follow_links": true
+    }
+  ],
+  "update_frequency_hours": 24
+}

@@ -1,0 +1,17 @@
+llama-index
+google-generativeai
+chromadb
+python-dotenv
+streamlit
+spacy
+transformers
+torch
+langchain
+neo4j
+requests
+beautifulsoup4
+py2neo
+networkx
+matplotlib
+pandas
+sentence-transformers
