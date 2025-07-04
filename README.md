@@ -8,7 +8,7 @@ This project implements a comprehensive chatbot that can answer questions based 
 - Content indexing and chunking with LlamaIndex
 - Vector embeddings stored in ChromaDB
 - Semantic search to find relevant content chunks
-- GPT-4o for natural language responses
+- Google Gemini Pro for natural language responses
 
 ### Phase 2: Knowledge Graph ✅
 - Entity extraction from content
@@ -31,11 +31,11 @@ This project implements a comprehensive chatbot that can answer questions based 
    ```bash
    pip install -r requirements.txt
    ```
-3. Copy the example.env file to .env and add your OpenAI API key:
+3. Copy the example.env file to .env and add your Google Gemini API key:
    ```bash
    cp example.env .env
    ```
-   Then edit the .env file with your actual API key
+   Then edit the .env file with your actual Gemini API key
 
 4. Install the spaCy language model:
    ```bash
@@ -155,6 +155,29 @@ The system can be configured through:
 1. Environment variables in `.env`
 2. Website sources in `content_sources.json`
 3. Configuration parameters in `src/utils/config.py`
+
+## Google Colab Support
+
+This project can be run in Google Colab for easy use without setting up a local environment.
+
+### Running in Colab
+
+1. Open the `colab_notebook.ipynb` in Google Colab
+2. Follow the step-by-step instructions in the notebook
+3. Use the Streamlit interface directly in Colab
+
+The notebook will:
+- Install all required dependencies
+- Set up your Gemini API key
+- Create a data directory for your content
+- Build the vector index
+- Run a Streamlit interface using ngrok (optional)
+
+Special Colab files:
+- `colab_notebook.ipynb` - Main notebook with step-by-step instructions
+- `colab_chatbot.py` - Simplified chatbot implementation for Colab
+- `colab_chatbot_flexible.py` - Version-flexible implementation that handles different LlamaIndex import structures
+- `colab_streamlit_app.py` - Streamlit interface for Colab
 
 ## Performance Optimization
 
